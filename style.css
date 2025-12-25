@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #ff0000;
+    padding: 15px 30px;
+}
+
+header h1 {
+    cursor: pointer;
+}
+
+header span {
+    font-weight: normal;
+}
+
+/* HOMEPAGE GRID */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.video-card {
+    cursor: pointer;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+/* WATCH PAGE */
+.watch-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+#main-video {
+    flex: 3;
+}
+
+#main-video iframe {
+    width: 100%;
+    height: 420px;
+    border-radius: 10px;
+}
+
+#sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar-video iframe {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    margin: 15px 20px;
+    padding: 8px 14px;
+    background: #ff0000;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.video-card img,
+.sidebar-video img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.video-card p,
+.sidebar-video p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}

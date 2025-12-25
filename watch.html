@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Watch – MiniTube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <header>
+        <h1 onclick="goHome()">Mini<span>Tube</span></h1>
+    </header>
+
+    <!-- BACK BUTTON -->
+    <button class="back-btn" onclick="goHome()">← Back to Home</button>
+
+    <!-- MAIN LAYOUT -->
+    <div class="watch-container">
+
+        <!-- MAIN VIDEO -->
+        <div id="main-video">
+            <!-- iframe will be inserted here by JS -->
+        </div>
+
+        <!-- SIDEBAR VIDEOS -->
+        <div id="sidebar">
+            <!-- Sidebar thumbnails inserted by JS -->
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+    <script>
+        loadWatchPage();
+    </script>
+
+</body>
+
+</html>
